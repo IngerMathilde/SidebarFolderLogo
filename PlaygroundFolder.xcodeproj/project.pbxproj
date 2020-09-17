@@ -8,25 +8,60 @@
 
 /* Begin PBXBuildFile section */
 		EFC05B752512B31A000DC352 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC05B742512B31A000DC352 /* AppDelegate.swift */; };
-		EFC05B772512B31A000DC352 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC05B762512B31A000DC352 /* ContentView.swift */; };
-		EFC05B792512B31B000DC352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC05B782512B31B000DC352 /* Assets.xcassets */; };
-		EFC05B7C2512B31B000DC352 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC05B7B2512B31B000DC352 /* Preview Assets.xcassets */; };
-		EFC05B7F2512B31B000DC352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC05B7D2512B31B000DC352 /* Main.storyboard */; };
+		EFC05B8B2512B3E0000DC352 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC05B892512B3E0000DC352 /* main.swift */; };
+		EFC05B8C2512B3E0000DC352 /* SwiftySystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC05B8A2512B3E0000DC352 /* SwiftySystem.swift */; };
+		EFC05B8E2512B41B000DC352 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = EFC05B8D2512B41B000DC352 /* icon.iconset */; };
+		EFC05B962512B469000DC352 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC05B952512B469000DC352 /* FinderSync.swift */; };
+		EFC05B9B2512B469000DC352 /* PlaygroundFolderFinderSync.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EFC05B932512B469000DC352 /* PlaygroundFolderFinderSync.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFC05B992512B469000DC352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFC05B692512B31A000DC352 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFC05B922512B469000DC352;
+			remoteInfo = PlaygroundFolderFinderSync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EFC05B9F2512B469000DC352 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EFC05B9B2512B469000DC352 /* PlaygroundFolderFinderSync.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EFC05B712512B31A000DC352 /* PlaygroundFolder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaygroundFolder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC05B742512B31A000DC352 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EFC05B762512B31A000DC352 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		EFC05B782512B31B000DC352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EFC05B7B2512B31B000DC352 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EFC05B7E2512B31B000DC352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFC05B802512B31B000DC352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFC05B812512B31B000DC352 /* PlaygroundFolder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlaygroundFolder.entitlements; sourceTree = "<group>"; };
+		EFC05B892512B3E0000DC352 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EFC05B8A2512B3E0000DC352 /* SwiftySystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftySystem.swift; sourceTree = "<group>"; };
+		EFC05B8D2512B41B000DC352 /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icon.iconset; sourceTree = "<group>"; };
+		EFC05B932512B469000DC352 /* PlaygroundFolderFinderSync.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PlaygroundFolderFinderSync.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC05B952512B469000DC352 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		EFC05B972512B469000DC352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFC05B982512B469000DC352 /* PlaygroundFolderFinderSync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlaygroundFolderFinderSync.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EFC05B6E2512B31A000DC352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC05B902512B469000DC352 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				EFC05B732512B31A000DC352 /* PlaygroundFolder */,
+				EFC05B942512B469000DC352 /* PlaygroundFolderFinderSync */,
 				EFC05B722512B31A000DC352 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				EFC05B712512B31A000DC352 /* PlaygroundFolder.app */,
+				EFC05B932512B469000DC352 /* PlaygroundFolderFinderSync.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,23 +92,24 @@
 		EFC05B732512B31A000DC352 /* PlaygroundFolder */ = {
 			isa = PBXGroup;
 			children = (
+				EFC05B8D2512B41B000DC352 /* icon.iconset */,
+				EFC05B892512B3E0000DC352 /* main.swift */,
+				EFC05B8A2512B3E0000DC352 /* SwiftySystem.swift */,
 				EFC05B742512B31A000DC352 /* AppDelegate.swift */,
-				EFC05B762512B31A000DC352 /* ContentView.swift */,
-				EFC05B782512B31B000DC352 /* Assets.xcassets */,
-				EFC05B7D2512B31B000DC352 /* Main.storyboard */,
 				EFC05B802512B31B000DC352 /* Info.plist */,
 				EFC05B812512B31B000DC352 /* PlaygroundFolder.entitlements */,
-				EFC05B7A2512B31B000DC352 /* Preview Content */,
 			);
 			path = PlaygroundFolder;
 			sourceTree = "<group>";
 		};
-		EFC05B7A2512B31B000DC352 /* Preview Content */ = {
+		EFC05B942512B469000DC352 /* PlaygroundFolderFinderSync */ = {
 			isa = PBXGroup;
 			children = (
-				EFC05B7B2512B31B000DC352 /* Preview Assets.xcassets */,
+				EFC05B952512B469000DC352 /* FinderSync.swift */,
+				EFC05B972512B469000DC352 /* Info.plist */,
+				EFC05B982512B469000DC352 /* PlaygroundFolderFinderSync.entitlements */,
 			);
-			path = "Preview Content";
+			path = PlaygroundFolderFinderSync;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,15 +122,34 @@
 				EFC05B6D2512B31A000DC352 /* Sources */,
 				EFC05B6E2512B31A000DC352 /* Frameworks */,
 				EFC05B6F2512B31A000DC352 /* Resources */,
+				EFC05B9F2512B469000DC352 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EFC05B9A2512B469000DC352 /* PBXTargetDependency */,
 			);
 			name = PlaygroundFolder;
 			productName = PlaygroundFolder;
 			productReference = EFC05B712512B31A000DC352 /* PlaygroundFolder.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EFC05B922512B469000DC352 /* PlaygroundFolderFinderSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFC05B9C2512B469000DC352 /* Build configuration list for PBXNativeTarget "PlaygroundFolderFinderSync" */;
+			buildPhases = (
+				EFC05B8F2512B469000DC352 /* Sources */,
+				EFC05B902512B469000DC352 /* Frameworks */,
+				EFC05B912512B469000DC352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlaygroundFolderFinderSync;
+			productName = PlaygroundFolderFinderSync;
+			productReference = EFC05B932512B469000DC352 /* PlaygroundFolderFinderSync.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,6 +162,9 @@
 				ORGANIZATIONNAME = "Inger van Boeijen";
 				TargetAttributes = {
 					EFC05B702512B31A000DC352 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					EFC05B922512B469000DC352 = {
 						CreatedOnToolsVersion = 11.7;
 					};
 				};
@@ -123,6 +183,7 @@
 			projectRoot = "";
 			targets = (
 				EFC05B702512B31A000DC352 /* PlaygroundFolder */,
+				EFC05B922512B469000DC352 /* PlaygroundFolderFinderSync */,
 			);
 		};
 /* End PBXProject section */
@@ -132,9 +193,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFC05B7F2512B31B000DC352 /* Main.storyboard in Resources */,
-				EFC05B7C2512B31B000DC352 /* Preview Assets.xcassets in Resources */,
-				EFC05B792512B31B000DC352 /* Assets.xcassets in Resources */,
+				EFC05B8E2512B41B000DC352 /* icon.iconset in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC05B912512B469000DC352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,23 +211,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFC05B772512B31A000DC352 /* ContentView.swift in Sources */,
+				EFC05B8C2512B3E0000DC352 /* SwiftySystem.swift in Sources */,
+				EFC05B8B2512B3E0000DC352 /* main.swift in Sources */,
 				EFC05B752512B31A000DC352 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC05B8F2512B469000DC352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC05B962512B469000DC352 /* FinderSync.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		EFC05B7D2512B31B000DC352 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EFC05B7E2512B31B000DC352 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		EFC05B9A2512B469000DC352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFC05B922512B469000DC352 /* PlaygroundFolderFinderSync */;
+			targetProxy = EFC05B992512B469000DC352 /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EFC05B822512B31B000DC352 /* Debug */ = {
@@ -280,11 +352,12 @@
 		EFC05B852512B31B000DC352 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PlaygroundFolder/PlaygroundFolder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"PlaygroundFolder/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PlaygroundFolder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,11 +374,12 @@
 		EFC05B862512B31B000DC352 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PlaygroundFolder/PlaygroundFolder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"PlaygroundFolder/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PlaygroundFolder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,6 +389,44 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.PlaygroundFolder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EFC05B9D2512B469000DC352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PlaygroundFolderFinderSync/PlaygroundFolderFinderSync.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PlaygroundFolderFinderSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PlaygroundFolder.PlaygroundFolderFinderSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EFC05B9E2512B469000DC352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PlaygroundFolderFinderSync/PlaygroundFolderFinderSync.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PlaygroundFolderFinderSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PlaygroundFolder.PlaygroundFolderFinderSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -336,6 +448,15 @@
 			buildConfigurations = (
 				EFC05B852512B31B000DC352 /* Debug */,
 				EFC05B862512B31B000DC352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFC05B9C2512B469000DC352 /* Build configuration list for PBXNativeTarget "PlaygroundFolderFinderSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC05B9D2512B469000DC352 /* Debug */,
+				EFC05B9E2512B469000DC352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

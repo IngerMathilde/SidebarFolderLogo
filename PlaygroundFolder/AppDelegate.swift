@@ -7,33 +7,24 @@
 //
 
 import Cocoa
-import SwiftUI
+import Darwin
 
-@NSApplicationMain
+
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    var window: NSWindow!
-
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
-
-        // Create the window and set the content view. 
-        window = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
-            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
-            backing: .buffered, defer: false)
-        window.center()
-        window.setFrameAutosaveName("Main Window")
-        window.contentView = NSHostingView(rootView: contentView)
-        window.makeKeyAndOrderFront(nil)
+        NSLog("Installing Finder extension")
+        SwiftySystem.execute(path: "/usr/bin/pluginkit", arguments: ["-e", "use", "-i", "com.PlaygroundFolder.PlaygroundFolderFinderSync"])
+        SwiftySystem.execute(path: "/usr/bin/killall",arguments: ["Finder"])
+        alert(customMessage: "Finder sync functionalities for Playground folder")
+        exit(0)
     }
-
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+        
+    private func alert(customMessage: String) {
+        let alert = NSAlert()
+        alert.messageText = "Information"
+        alert.informativeText = customMessage
+        alert.runModal()
     }
-
-
 }
 

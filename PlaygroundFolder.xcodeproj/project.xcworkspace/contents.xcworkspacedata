@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/ingervanboeijen/Workspace/Playground/xcode/Finder/PlaygroundFolder/PlaygroundFolder/main.swift">
+   </FileRef>
+   <FileRef
       location = "self:PlaygroundFolder.xcodeproj">
    </FileRef>
 </Workspace>
